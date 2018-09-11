@@ -1,0 +1,8 @@
+openssl enc -e -a -salt -aes-256-cbc -in test1.txt -out test2.txt -md md5 -pass pass:mypassword
+
+openssl enc -d -a -salt -aes-256-cbc -in test2.txt -md md5 -pass pass:mypassword
+##
+####
+openssl enc -e -a -salt -aes-256-cbc -in mydoc.txt -out mydoc.enc -md md5
+
+openssl enc -d -a -salt -aes-256-cbc -in mydoc.enc -md md5
